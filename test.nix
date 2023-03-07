@@ -1,4 +1,4 @@
-{ pkgs ? import ./nix/nixpkgs.nix }:
+{ pkgs ? import <nixpkgs> }:
 
 let
   cargoNix = pkgs.callPackage ./Cargo.nix { };
